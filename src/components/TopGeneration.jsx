@@ -7,7 +7,7 @@ const TopGeneration = async() => {
      )
      const photos = await res.json ()
      const topPhoto=photos.slice(0,8)
-    console.log(topPhoto);
+    // console.log(topPhoto);
     return (
       <div>
         <h1 className="text-2xl font-bold my-5">Top Genteration</h1>

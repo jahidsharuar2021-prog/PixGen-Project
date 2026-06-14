@@ -3,9 +3,10 @@ import { GoHeartFill } from "react-icons/go";
 import Image from 'next/image';
 import React from 'react';
 import { BiDownload } from 'react-icons/bi';
+import Link from 'next/link';
 
 const PhotoCard = ({photo}) => {
-    console.log(photo);
+    // console.log(photo);
     return (
       <Card classname="border rounded-xl">
         <div className="relative  w-full aspect-square">
@@ -44,8 +45,12 @@ const PhotoCard = ({photo}) => {
           </div>
         </div>
 
-         <Button variant='outline' className={'w-full'}>View</Button>
-
+        <Link href={`/all-photos/${photo.id}`}>
+          {" "}
+          <Button variant="outline" className={"w-full"}>
+            View
+          </Button>
+        </Link>
       </Card>
     );
 };
