@@ -28,7 +28,7 @@ export default function SignInPage() {
         password,
         callbackURL:'/',
     })
-    console.log(data, error);
+    // console.log(data, error);
   };
 
   const handleGoogleSignIn = async () => {
